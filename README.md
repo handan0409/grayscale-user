@@ -15,7 +15,9 @@ yarn add grayscale-user
 *若获取出来的value是一个query的话*  
 参数三：【选填】获取query的name值 默认 UserID 或 uid  
 *若获取出来的value是一个字符串的话*  
-参数三：【选填】需要填写空“”，或者null，不能空着或者传undefined  
+参数三：【选填】需要填写空“”，或者null，不能空着或者传undefined   
+
+返回值： boolean值，true：在灰度范围内，false：表示不再灰度范围内
 ```
 import grayscaleUser from "../index.js";
 
