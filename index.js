@@ -11,7 +11,7 @@ function grayscaleUser(scale, cookie_name, name) {
   if (!userId) {
     userId = cookie.getCookieName( cookie_name || 'dk_cookie', name !== undefined ? name : "uid");
   }
-  console.log(userId);
+  // console.log(userId);
   // 20 0.2 2  26    12312345 
   scale = parseInt(scale);
   userId = parseInt(userId);
