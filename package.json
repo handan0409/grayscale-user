@@ -1,6 +1,6 @@
 {
   "name": "grayscale-user",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "做用户灰度方案",
   "main": "index.js",
   "repository": "https://github.com/handan0409/grayscale-user.git",

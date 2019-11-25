@@ -3,9 +3,9 @@
  * handan
  * 做用户灰度策略
  */
-let cookie = require("hd-cookie")  ;
+let Cookie = require("hd-cookie");
 
-let newCookie = new cookie() ;
+let newCookie = new Cookie() ;
 
 function grayscaleUser(scale, cookie_name, name, userIds) {
   let userId = "" ;
@@ -20,7 +20,7 @@ function grayscaleUser(scale, cookie_name, name, userIds) {
       userId = newCookie.getCookie( cookie_name || 'dk_cookie');
     }
   }
-  if(userIds && userIds.indexOf &&userIds.indexOf(userId) * 1 > -1){
+  if(userIds && userIds.indexOf && (userIds.indexOf(userId) * 1 > -1)){
     // 在白名单内，不需要灰度
     return true ;
   }
@@ -38,7 +38,5 @@ function grayscaleUser(scale, cookie_name, name, userIds) {
   }
   return false;
 }
-
-
 
 module.exports = grayscaleUser;
