@@ -1,13 +1,13 @@
 {
   "name": "grayscale-user",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "做用户灰度方案",
   "main": "index.js",
   "repository": "https://github.com/handan0409/grayscale-user.git",
   "author": "handan_0409@163.com",
   "license": "MIT",
   "dependencies": {
-    "hd-cookie": "^0.0.9"
+    "hd-cookie": "^1.0.2"
   },
   "scripts": {
     "build": "webpack --config=./webpack.config.dev.js",
