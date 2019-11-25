@@ -15,7 +15,7 @@ yarn add grayscale-user
 参数三：【选填】若获取出来的value是一个query的话，获取query的name值 默认 UserID 或 uid  <br><br>
 
 返回值： boolean值，true：在灰度范围内，false：表示不再灰度范围内
-```
+```js
 import grayscaleUser from "../index.js";
 
 console.log("是否灰度：",grayscaleUser("灰度比例","cookie的name值",'query的name值'));
