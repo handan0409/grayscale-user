@@ -7,19 +7,15 @@ let Cookie = require("hd-cookie");
 
 let newCookie = new Cookie() ;
 
-function grayscaleUser(scale, cookie_name, name, userIds) {
-  let userId = "" ;
-  if(name){
-    userId = newCookie.getCookieName(cookie_name || 'PPU', name || 'UID');
+function grayscaleUser(scale, uid, userIds) {
+  let userId = uid ;
+  if(!userId){
+    userId = newCookie.getCookieName('PPU', 'UID');
     if (!userId) {
-      userId = newCookie.getCookieName( cookie_name || 'dk_cookie', name || "uid");
-    }
-  }else{
-    userId = newCookie.getCookie(cookie_name || 'PPU');
-    if (!userId) {
-      userId = newCookie.getCookie( cookie_name || 'dk_cookie');
+      userId = newCookie.getCookieName('dk_cookie', "uid");
     }
   }
+  if(!userId) return false ;
   if(userIds && userIds.indexOf && (userIds.indexOf(userId) * 1 > -1)){
     // 在白名单内，不需要灰度
     return true ;
