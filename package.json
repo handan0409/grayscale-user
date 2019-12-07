@@ -1,6 +1,6 @@
 {
   "name": "grayscale-user",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "做用户灰度方案",
   "main": "index.js",
   "repository": "https://github.com/handan0409/grayscale-user.git",
@@ -13,6 +13,12 @@
     "build": "webpack --config=./webpack.config.dev.js",
     "start": "webpack-dev-server --config=./webpack.config.dev.js"
   },
+  "keywords": [
+    "handan",
+    "user",
+    "灰度方案",
+    "gray"
+  ],
   "devDependencies": {
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.34.0",
