@@ -26,8 +26,12 @@ function grayscaleUser(scale, uid, userIds) {
   userId = parseInt(userId);
   if (!scale || !userId) return false;
 
+  if(scale >= 100){
+    return true ;
+  }
+
   let useridTen = userId * 1 % 100;
-  let scaleTen = ( scale * 1 % 100 ) || 100;
+  let scaleTen = scale * 1 % 100 ;
 
   if (useridTen < scaleTen) {
     return true;

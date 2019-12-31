@@ -8,4 +8,4 @@ document.cookie = `PPU='UID=123138&asd=123123136'`
 // document.cookie = `dk_cookie="uid=34567876543&asd=123123123`
 // document.cookie = `dk_cookie='asd=123&uid=345678765041&aasdf=123123123'`
 
-console.log("是否灰度：",grayscaleUser(50, "123149", "123138"));
+console.log("是否灰度：",grayscaleUser(101, "123149"));
