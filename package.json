@@ -1,6 +1,6 @@
 {
   "name": "grayscale-user",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "做用户灰度方案",
   "main": "index.js",
   "repository": "https://github.com/handan0409/grayscale-user.git",
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "build": "webpack --config=./webpack.config.dev.js",
-    "start": "webpack-dev-server --config=./webpack.config.dev.js"
+    "start": "webpack-dev-server --config=./webpack.config.dev.js",
+    "babelBuild": "./node_modules/.bin/babel src --out-dir lib"
   },
   "keywords": [
     "user",
@@ -19,6 +20,10 @@
     "gray"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4",
